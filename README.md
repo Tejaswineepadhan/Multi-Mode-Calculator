@@ -1,4 +1,4 @@
-🧮 Multi-Mode Calculator
+**🧮 Multi-Mode Calculator**
 
 A responsive and interactive Multi-Mode Calculator Web Application built using HTML, CSS, and JavaScript.
 
@@ -12,9 +12,10 @@ This project combines three useful tools into one clean interface:
 
 It also includes voice feedback using the Web Speech API for an enhanced user experience.
 
-📌 Features
 
-🔢 1. Standard Calculator
+**📌 Features**
+
+**🔢 1. Standard Calculator**
 
 Basic arithmetic operations (+, −, ×, ÷)
 
@@ -30,7 +31,7 @@ Real-time display
 
 Voice feedback for button presses
 
-💱 2. Currency Converter
+**💱 2. Currency Converter**
 
 Convert between:
 
@@ -48,7 +49,7 @@ Result shown in main display
 
 (Currently uses static exchange rates — can be upgraded to live API)
 
-📐 3. Area Calculator
+**📐 3. Area Calculator**
 
 Supports area calculation for:
 
@@ -64,7 +65,7 @@ Trapezium
 
 Dynamic input fields appear based on selected shape.
 
-🎨 UI Highlights
+**🎨 UI Highlights**
 
 Modern neumorphic design
 
@@ -76,7 +77,8 @@ Fully centered responsive layout
 
 Clean dark theme
 
-🛠 Technologies Used
+
+**🛠 Technologies Used**
 
 HTML5
 
@@ -86,7 +88,8 @@ JavaScript (Vanilla JS)
 
 Web Speech API (for voice feedback)
 
-Git & GitHub
+
+**Git & GitHub**
 
 📂 Project Structure
 multi-mode-calculator/
@@ -96,7 +99,8 @@ multi-mode-calculator/
 ├── script.js
 └── README.md
 
-🧠 How It Works
+
+**🧠 How It Works**
 
 JavaScript controls mode switching by toggling CSS classes.
 
@@ -108,15 +112,18 @@ Area calculator dynamically injects input fields based on shape selection.
 
 Web Speech API provides audio feedback on button actions.
 
-📷 Screenshot
+
+**📷 Screenshot**
 
 <img width="604" height="825" alt="image" src="https://github.com/user-attachments/assets/716bdecf-5fbd-4a66-a66e-8d42dda7b12c" />
 
-🚀 Live Demo
+
+**🚀 Live Demo**
 
  https://tejaswineepadhan.github.io/Multi-Mode-Calculator/
+
  
-🔮 Future Improvements
+**🔮 Future Improvements**
 
 🌍 Live currency exchange API integration
 
@@ -129,6 +136,6 @@ Web Speech API provides audio feedback on button actions.
 🧮 Scientific calculator functions
 
 
-📄 License
+**📄 License**
 
 This project is open source and free to use for educational purposes.
