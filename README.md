@@ -112,7 +112,10 @@ Web Speech API provides audio feedback on button actions.
 
 <img width="604" height="825" alt="image" src="https://github.com/user-attachments/assets/716bdecf-5fbd-4a66-a66e-8d42dda7b12c" />
 
+🚀 Live Demo
 
+ https://tejaswineepadhan.github.io/Multi-Mode-Calculator/
+ 
 🔮 Future Improvements
 
 🌍 Live currency exchange API integration
