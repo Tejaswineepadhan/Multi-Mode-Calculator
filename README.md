@@ -116,11 +116,16 @@ Web Speech API provides audio feedback on button actions.
 🔮 Future Improvements
 
 🌍 Live currency exchange API integration
+
 ⌨ Keyboard input support
+
 🌙 Light/Dark mode toggle
+
 📱 Mobile optimization improvements
+
 🧮 Scientific calculator functions
 
 
 📄 License
+
 This project is open source and free to use for educational purposes.
