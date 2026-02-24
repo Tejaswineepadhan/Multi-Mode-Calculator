@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi Mode Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- DISPLAY -->
+    <input type="text" id="display" class="display" readonly>
+
+    <!-- MODE BUTTONS -->
+    <div class="mode-buttons">
+        <button id="calcBtn" onclick="showCalculator()">Calculator</button>
+        <button id="currencyBtn" onclick="showCurrency()">Currency</button>
+        <button id="areaBtn" onclick="showArea()">Area</button>
+    </div>
+
+    <!-- ================= CALCULATOR MODE ================= -->
+    <div id="calcMode">
+
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="press('+/-')">+/-</button>
+            <button onclick="press('%')">%</button>
+            <button onclick="press('/')">/</button>
+
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('*')">*</button>
+
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('-')">-</button>
+
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('+')">+</button>
+
+            <button onclick="press('0')">0</button>
+            <button onclick="press('.')">.</button>
+            <button onclick="backspace()">⌫</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+
+    </div>
+
+    <!-- ================= CURRENCY MODE ================= -->
+    <div id="currencyMode" class="hidden">
+
+        <input type="number" id="currencyAmount" placeholder="Enter Amount">
+
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <select id="toCurrency">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <button class="convert" onclick="convertCurrency()">Convert</button>
+
+    </div>
+
+    <!-- ================= AREA MODE ================= -->
+    <div id="areaMode" class="hidden">
+
+        <select id="shapeSelect" onchange="updateShapeInputs()">
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+            <option value="parallelogram">Parallelogram</option>
+            <option value="trapezium">Trapezium</option>
+        </select>
+
+        <div id="shapeInputs"></div>
+
+        <button class="calculateArea" onclick="calculateArea()">Calculate Area</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

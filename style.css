@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #25271b;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+    background: #3a3a3a;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px #131313, -10px -10px 50px #131313;
+    width: 340px;
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #2e2e2e;
+    color: #9cff57;
+    padding-right: 3px;
+}
+
+/* =======================
+   MODE BUTTONS
+======================= */
+.mode-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.mode-buttons button {
+    flex: 1;
+    margin: 5px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #ff9900;
+    /* Yellow default */
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover */
+.mode-buttons button:hover {
+    opacity: 0.9;
+}
+
+/* ACTIVE MODE (Green) */
+.mode-buttons button.active {
+    background: #9cff57;
+    /* Green */
+    color: black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background: #3a3a3a;
+    box-shadow: 6px 6px 12px #242424, -6px -6px 12px #4a4a4a;
+}
+
+button:active {
+    box-shadow: inset 6px 6px 12px #242424, inset -6px -6px 12px #4a4a4a;
+}
+
+.equal {
+    /* grid-row: span 2; */
+    background: #ff9900;
+}
+
+.convert,
+.calculateArea {
+    margin: 5px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #ff9900;
+    /* Yellow default */
+    color: white;
+    font-weight: bold;
+}
+
+
+/* hidden sections */
+.hidden {
+    display: none;
+}
+
+/* currency & area styles */
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: none;
+
+    background: #3a3a3a;
+    box-shadow: 6px 6px 12px #242424, -6px -6px 12px #4a4a4a;
+    color: white;
+}
